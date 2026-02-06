@@ -28,6 +28,7 @@ list_of_files=[
     "setup.py",
     "research/research.ipynb",
     "templates/index.html",
+    "templates/results.html",
     "app.py",
     'alikhan.py'
 
