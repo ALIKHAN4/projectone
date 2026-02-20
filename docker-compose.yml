@@ -8,4 +8,10 @@ services:
     container_name: wine-app
     restart: always
     ports:
-      - "8080:8080"         
+      - "8080:8080"
+    volumes:
+      - .:/app                # ← full project (most convenient for dev)
+      # or more targeted (better performance, cleaner):
+      # - ./templates:/app/templates
+      # - ./static:/app/static
+      # - ./app.py:/app/app.py
